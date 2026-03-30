@@ -75,8 +75,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="P4t-LA-q1s" id="dWv-JM-DMD"/>
-                                    <outlet property="delegate" destination="P4t-LA-q1s" id="PSc-rW-5XQ"/>
+                                    <outlet property="dataSource" destination="P4t-LA-q1s" id="UsL-Qc-gM4"/>
+                                    <outlet property="delegate" destination="P4t-LA-q1s" id="hlx-t0-wCh"/>
                                 </connections>
                             </tableView>
                         </subviews>

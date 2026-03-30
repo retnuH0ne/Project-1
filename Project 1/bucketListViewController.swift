@@ -7,7 +7,7 @@
 
 import UIKit
 
-class bucketListViewController: UIViewController {
+class bucketListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var bucketArray = ["Get fluent in Korean", "Go to Japan", "Cook for myslef", "Go to Evo", "Make a mobile fighting game"]
     
