@@ -21,20 +21,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="tempField:" destination="I4H-eS-WjT" eventType="editingDidEnd" id="OAh-Yj-I8T"/>
-                                    <action selector="tempField:" destination="IVE-SH-yoo" eventType="editingDidEnd" id="wic-B9-ehK"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHL-4V-gzg">
                                 <rect key="frame" x="159" y="346" width="75" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                <connections>
-                                    <action selector="convertButton:" destination="I4H-eS-WjT" eventType="touchUpInside" id="cHY-NW-N4p"/>
-                                    <action selector="convertButton:" destination="IVE-SH-yoo" eventType="touchUpInside" id="zCa-PM-Ofv"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONN-By-H8X">
                                 <rect key="frame" x="175" y="416" width="42" height="21"/>
@@ -49,11 +41,12 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Weather" image="sun.max.circle" catalog="system" id="toy-vp-kJC"/>
                     <connections>
+                        <outlet property="convertButton" destination="vHL-4V-gzg" id="9Ye-oD-2Ks"/>
                         <outlet property="resultLabel" destination="ONN-By-H8X" id="hxf-wa-8an"/>
+                        <outlet property="tempField" destination="grb-gs-0kD" id="qfd-gm-tTk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dr8-Zq-Q51" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="I4H-eS-WjT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1403.8167938931297" y="40.845070422535215"/>
         </scene>

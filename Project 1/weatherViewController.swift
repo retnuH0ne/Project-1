@@ -10,26 +10,25 @@ import UIKit
 class weatherViewController: UIViewController {
     
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var tempField: UITextField!
+    @IBOutlet weak var convertButton: UIButton!
+    
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         resultLabel.text = ""
-        
-    }
-    
-    @IBAction func tempField(_ sender: Any) {
+        convertButton.text = "Convert"
         
         
     }
     
-    @IBAction func convertButton(_ sender: Any) {
-        
-        let degreesF = tempField.text
+    
         
         
-    }
+        
+    
     
 
 }
