@@ -11,7 +11,6 @@ class weatherViewController: UIViewController {
     
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var tempField: UITextField!
-    @IBOutlet weak var convertButton: UIButton!
     
     
 
@@ -19,16 +18,20 @@ class weatherViewController: UIViewController {
         super.viewDidLoad()
 
         resultLabel.text = ""
-        convertButton.text = "Convert"
         
+        tempField.text = ""
         
     }
     
     
+    @IBAction func convertButton(_ sender: Any) {
         
+        let result = Double(tempField.text!)!
+        let converted = (result - 32) * 5/9
         
+        resultLabel.text = "Today is \(converted)°C"
         
+    }
     
-    
-
+        
 }
